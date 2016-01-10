@@ -1,0 +1,15 @@
+.ncg-label(style="margin-top: 4px;") MANUAL ENTRY
+.input-group.ctrl-name
+    span.input-group-addon Name
+    input.form-control(type="text", placeholder="NAME")
+
+div(style="display: flex; margin-top:4px;")
+    .btn-group.btn-group-justified(data-toggle="buttons", style="width: 70%;")
+        label.btn.btn-xs.btn-info.form-control.active
+            input(type="radio", name="manualType", value="subscription", checked="")
+            | Sub
+        label.btn.btn-xs.btn-info.form-control
+            input(type="radio", name="manualType", value="follow")
+            | Follow
+    button.ctrl-send.btn.btn-xs.btn-success(type="button", style="width: 29%; margin-left: 4px;")
+        | Send

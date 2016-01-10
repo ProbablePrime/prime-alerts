@@ -1,0 +1,13 @@
+body {
+    margin: 0; padding: 0;
+}
+
+#container {
+    position: absolute;
+    height: 100px; width: 992px;
+}
+
+#nowplaying {
+    position: absolute;
+    height: 100px; width: 992px;
+}
