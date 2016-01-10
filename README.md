@@ -4,7 +4,7 @@ This is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
 This is a barebones Alert bundle that listen to [nodecg-beam](https://github.com/ProbablePrime/nodecg-beam) alerts.
 
 ## Demo
-TODO
+![demo](http://i.ahref.co.uk/u/r/trnS.gif)
 
 
 ## Installation
