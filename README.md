@@ -2,6 +2,7 @@
 This is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
 
 This is a barebones Alert bundle that listen to [nodecg-beam](https://github.com/ProbablePrime/nodecg-beam) alerts.
+If you wish to test it it also listens to [prime-manual-alerts](https://github.com/ProbablePrime/prime-manual-alerts).
 
 ## Demo
 ![demo](http://i.ahref.co.uk/u/r/trnS.gif)
