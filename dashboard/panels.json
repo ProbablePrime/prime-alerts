@@ -1,9 +1,0 @@
-[
-    {
-        "name": "notify",
-        "title": "Notifications",
-        "width": 2,
-        "file": "panel.jade",
-        "faIcon": "fa-exclamation"
-    }
-]
