@@ -4,7 +4,7 @@ This is a [NodeCG](http://github.com/nodecg/nodecg) bundle.
 This is a barebones Alert bundle that listen to [nodecg-beam](https://github.com/ProbablePrime/nodecg-beam) alerts.
 
 ## Demo
-TODO
+![demo](http://i.ahref.co.uk/u/r/trnS.gif)
 
 
 ## Installation
@@ -12,7 +12,7 @@ TODO
 - To listen for subscriptions and follows, install and configure [nodecg-beam](https://github.com/ProbablePrime/nodecg-beam).
 
 ### Usage
-- Add `http://localhost:9090/view/prime-alerts` (or whatever) as a Browser Source in OBS, with dimensions of 992x100
+- Add `http://localhost:9090/view/prime-alerts` (or whatever) as a Browser Source in OBS
 - Use the "Notifications" panel on the dashboard to send test alerts
 
 ### Additional Credits
