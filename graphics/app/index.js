@@ -1,8 +1,11 @@
 
 //Let's make some noise?
 //http://www.freesound.org/people/InfiniteLifespan/sounds/266455/
-createjs.Sound.registerSound('snd/alert.wav', 'alert');
-createjs.Sound.registerSound('snd/alert.wav', 'sub');
+
+if(window.lfgSound === undefined) {
+	createjs.Sound.registerSound('snd/alert.wav', 'alert');
+	createjs.Sound.registerSound('snd/alert.wav', 'sub');
+}
 
 
 //Get a refence to our container element on the view page
@@ -89,8 +92,16 @@ function updateText(text) {
 	textObj.x = middle - textObj.getMeasuredWidth()/2;
 }
 
+function playSound(name) {
+	if(window.lfgSound !== undefined) {
+		window.lfgSound.play(name);
+	} else {
+		createjs.Sound.play(name);
+	}
+}
 
-function notify(text) {
+
+function notify(text, sound) {
 	if(showing) {
 		queue.push(text);
 		return;
@@ -99,7 +110,7 @@ function notify(text) {
 	updateText(text);
 
 	//Play the sound passed in
-	createjs.Sound.play('alert');
+	playSound(sound);
 	//In, HOLD, OUT
 	tweenIn().wait(holdDuration).call(tweenOut);
 }
