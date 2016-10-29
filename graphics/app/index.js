@@ -74,15 +74,19 @@ function tweenIn() {
 }
 
 function deQueue() {
-	if(queue.length) {
-		notify(queue.shift());
+	if(queue.length && !showing) {
+		var next = queue.shift();
+		notify(next.text, next.sound);
 	}
 }
 
+setInterval(deQueue,1000);
+
 //Slowely over tweenDuration ms hide the container by moving it up off the stage
 function tweenOut() {
-	showing = false;
-	var tween = createjs.Tween.get(container).to({x:0,y:height*-1},tweenDuration).call(deQueue);
+	var tween = createjs.Tween.get(container).to({x:0,y:height*-1},tweenDuration).call(function(){
+		showing = false;
+	});
 }
 
 //Update our previously created text object, with the passed in text.
@@ -93,6 +97,9 @@ function updateText(text) {
 }
 
 function playSound(name) {
+	if(!name) {
+		return;
+	}
 	if(window.lfgSound !== undefined) {
 		window.lfgSound.play(name);
 	} else {
@@ -103,7 +110,10 @@ function playSound(name) {
 
 function notify(text, sound) {
 	if(showing) {
-		queue.push(text);
+		queue.push({
+			text:text,
+			sound:sound
+		});
 		return;
 	}
 	showing = true;

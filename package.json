@@ -1,7 +1,7 @@
 {
     "name": "prime-alerts",
     "version": "1.0.0",
-    "nodecgDependency": "~0.7.0",
+    "nodecgDependency": "~0.8.0",
     "homepage": "http://probableprime.co.uk/",
     "authors": [
         "ProbablePrime"
@@ -9,7 +9,7 @@
     "description": "Prime's alerts",
     "license": "MIT",
     "nodecg": {
-        "compatibleRange": "~0.7.0",
+        "compatibleRange": "~0.8.0",
         "graphics": [
           {
             "file": "index.html",
