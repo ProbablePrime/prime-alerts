@@ -22,4 +22,4 @@ If you wish to test it it also listens to [prime-manual-alerts](https://github.c
 - As always Alex Van Camp, for writing NodeCG and providing a ton of awesome open source bundles.
 
 ### License
-TODO
+MIT
