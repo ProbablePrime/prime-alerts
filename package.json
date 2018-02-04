@@ -7,7 +7,7 @@
     "ProbablePrime"
   ],
   "scripts": {
-    "fmt":"prettier --write **/*.js"
+    "fmt": "prettier --write **/*.js"
   },
   "description": "Prime's alerts",
   "license": "MIT",
@@ -21,13 +21,13 @@
       }
     ]
   },
-  "dependencies": {
-    "prettier": "^1.10.2"
-  },
   "prettier": {
     "tabWidth": 4,
     "useTabs": true,
     "singleQuote": true,
     "trailingComma": "all"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
   }
 }
